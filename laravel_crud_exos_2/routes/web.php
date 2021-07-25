@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\indexController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +13,6 @@ use App\Http\Controllers\indexController;
 |
 */
 
-Route::get('/', [indexController::class, 'index']);
-Route::get('/form', [indexController::class, 'create']);
-Route::get('/store', [indexController::class, 'store']);
+Route::get('/',[indexController::class,'index']);
+Route::get('/create',[indexController::class,'create']);
+Route::get('/store',[indexController::class,'store']);
